@@ -1,0 +1,15 @@
+curl --header "Content-Type: application/json" --request POST  --data "{\"id\":\"123\", \"title\":\"Dungeon And Dragons 5ªth\", \"author\":\"WoTC\"}" http://localhost:8080/books
+curl --header "Content-Type: application/json" --request POST  --data "{\"id\":\"44\", \"title\":\"Dungeon And Dragons 1ªth\", \"author\":\"WoTC\"}" http://localhost:8080/books
+curl --header "Content-Type: application/json" --request POST  --data "{\"id\":\"414343\", \"title\":\"Dungeon And Dragons 2ªth\", \"author\":\"WoTC\"}" http://localhost:8080/books
+curl --header "Content-Type: application/json" --request POST  --data "{\"id\":\"42154\", \"title\":\"Dungeon And Dragons 3ªth\", \"author\":\"WoTC\"}" http://localhost:8080/books
+curl --header "Content-Type: application/json" --request POST  --data "{\"id\":\"127823\", \"title\":\"Dungeon And Dragons 4ªth\", \"author\":\"WoTC\"}" http://localhost:8080/books
+curl --header "Content-Type: application/json" --request POST  --data "{\"id\":\"187\", \"title\":\"How to seek the true power\", \"author\":\"Unknown\"}" http://localhost:8080/books
+
+
+
+curl --header "Content-Type: application/json" --request GET   http://localhost:8080/books?id=123
+curl --header "Content-Type: application/json" --request GET   http://localhost:8080/books?id=44
+curl --header "Content-Type: application/json" --request GET   http://localhost:8080/books?id=414343
+curl --header "Content-Type: application/json" --request GET   http://localhost:8080/books?id=42154
+curl --header "Content-Type: application/json" --request GET   http://localhost:8080/books?id=127823
+curl --header "Content-Type: application/json" --request GET   http://localhost:8080/books?id=187

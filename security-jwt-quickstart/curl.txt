@@ -1,0 +1,9 @@
+curl -H 'content-type: application/x-www-form-urlencoded' -u backend-service:hkdD0O1R1zWzqp0VpdWO89SxUJTLymaF -d 'username=admin&password=admin&grant_type=password' -X POST http://localhost:8180/auth/realms/Quarkus/protocol/openid-connect/token
+curl -H 'content-type: application/x-www-form-urlencoded' -u backend-service:hkdD0O1R1zWzqp0VpdWO89SxUJTLymaF -d 'username=user&password=user&grant_type=password' -X POST http://localhost:8180/auth/realms/Quarkus/protocol/openid-connect/token
+
+
+
+
+curl -H "Content-Type: application/json" --request POST --data "{\"name\":\"HobBotta\", \"birthdate\":\"19900214\", \"email\":\"hobbota@mail.com\"}" http://localhost:8080/profile
+curl -H "Content-Type: application/json" -H "Authorization: eyJraWQiOiIvcHJpdmF0ZUtleS5wZW0iLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL3F1YXJrdXMuaW8vdXNpbmctand0LXJiYWMiLCJqdGkiOiJhLTEyMyIsInN1YiI6ImhvYmJvdGFAbWFpbC5jb20iLCJ1cG4iOiJob2Jib3RhQG1haWwuY29tIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiSG9iQm90dGEiLCJiaXJ0aGRhdGUiOm51bGwsImdyb3VwcyI6WyJVc2VyIl0sImF1ZCI6InVzaW5nLWp3dCIsImV4cCI6MTY0MzYwMjIyMiwiaWF0IjoxNjQzNTk2MjIyLCJhdXRoX3RpbWUiOiJOdW1lcmljRGF0ZXsxNjQzNTk2MjIyIC0-IDMwIGRlIGphbi4gZGUgMjAyMiAyMzozMDoyMiBCUlR9In0.R0MQhi2c5E4eR-URBowF2ymEQogau9rkFtGSIBRk-iicPmiPExzpM02LNR70t0kWQ3WSpwfyRVvWZm1CzOGHZeVwitYzYKq7hSMPk6_2EeCH6PHeABNCoa_GFSavQXrHeE12v0E-xYpxLBucOaBwQpqgDkGoM2Quamqjnh3lePq2KrCJ9q6HXomY6pDDzMe12sqyNfIBAx2Svtd5-r5h5ySeoMBIv0d0bsl8DpG0Wet3JkPdYsveH7CQrP2PYvn6SI9DAfw5E6at7jDwNs5i_gjCipD25m0WC-f6SeTs0pe36JfzeUaKI8NXaWxZtntvyw5MUIW9B2lNzlS6OF2ZyQ" -I --request GET http://localhost:8080/profile
+

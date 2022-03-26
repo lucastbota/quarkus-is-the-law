@@ -1,0 +1,14 @@
+##espera-se ok
+curl -i -X GET http://localhost:8080/api/public
+
+##espera-se 401
+curl -i -X GET http://localhost:8080/api/admin
+
+##espera-se OK
+curl -i -X GET -u admin:admin http://localhost:8080/api/admin
+
+##espera-se 403, por conta de role distinta
+curl -i -X GET -u admin:admin http://localhost:8080/api/users/me
+
+##espera-se OK, por conta de ser o mesmo usuário
+curl -i -X GET -u user:user http://localhost:8080/api/users/me

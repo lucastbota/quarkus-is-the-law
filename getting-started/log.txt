@@ -1,0 +1,157 @@
+2021-12-05 00:12:02,445 desktop-b5306v4 getting-started-dev.jar[20356] INFO  [LifeCycle] (Quarkus Main Thread) Onstart Executed
+2021-12-05 00:12:02,550 desktop-b5306v4 getting-started-dev.jar[20356] INFO  [io.quarkus] (Quarkus Main Thread) getting-started 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.5.0.Final) started in 3.056s. Listening on: http://localhost:8080
+2021-12-05 00:12:02,550 desktop-b5306v4 getting-started-dev.jar[20356] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2021-12-05 00:12:02,551 desktop-b5306v4 getting-started-dev.jar[20356] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [cdi, resteasy, resteasy-jsonb, smallrye-context-propagation, vertx]
+2021-12-11 15:39:30,587 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [LifeCycle] (Quarkus Main Thread) Onstart Executed
+2021-12-11 15:39:30,748 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [io.quarkus] (Quarkus Main Thread) getting-started 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.5.0.Final) started in 3.934s. Listening on: http://localhost:8080
+2021-12-11 15:39:30,751 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2021-12-11 15:39:30,752 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [cdi, hibernate-validator, resteasy, resteasy-jsonb, smallrye-context-propagation, vertx]
+2021-12-11 15:43:37,543 desktop-b5306v4 getting-started-dev.jar[57268] ERROR [org.jbo.res.res.i18n] (executor-thread-0) RESTEASY002010: Failed to execute: javax.ws.rs.NotSupportedException: RESTEASY003200: Could not find message body reader for type: class tech.donau.course.data.Book of content type: text/plain
+	at org.jboss.resteasy.core.interception.jaxrs.ServerReaderInterceptorContext.throwReaderNotFound(ServerReaderInterceptorContext.java:55)
+	at org.jboss.resteasy.core.interception.jaxrs.AbstractReaderInterceptorContext.getReader(AbstractReaderInterceptorContext.java:133)
+	at org.jboss.resteasy.core.interception.jaxrs.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:75)
+	at org.jboss.resteasy.core.MessageBodyParameterInjector.inject(MessageBodyParameterInjector.java:213)
+	at org.jboss.resteasy.core.MethodInjectorImpl.injectArguments(MethodInjectorImpl.java:95)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:128)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:660)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:524)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:474)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:476)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:408)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:69)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:492)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:261)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:161)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:164)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:247)
+	at io.quarkus.resteasy.runtime.standalone.RequestDispatcher.service(RequestDispatcher.java:73)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.dispatch(VertxRequestHandler.java:135)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler$1.run(VertxRequestHandler.java:90)
+	at io.quarkus.vertx.core.runtime.VertxCoreRecorder$13.runWith(VertxCoreRecorder.java:543)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2449)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1478)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2021-12-11 15:44:23,594 desktop-b5306v4 getting-started-dev.jar[57268] ERROR [org.jbo.res.res.i18n] (executor-thread-0) RESTEASY002010: Failed to execute: javax.ws.rs.NotSupportedException: RESTEASY003200: Could not find message body reader for type: class tech.donau.course.data.Book of content type: text/plain
+	at org.jboss.resteasy.core.interception.jaxrs.ServerReaderInterceptorContext.throwReaderNotFound(ServerReaderInterceptorContext.java:55)
+	at org.jboss.resteasy.core.interception.jaxrs.AbstractReaderInterceptorContext.getReader(AbstractReaderInterceptorContext.java:133)
+	at org.jboss.resteasy.core.interception.jaxrs.AbstractReaderInterceptorContext.proceed(AbstractReaderInterceptorContext.java:75)
+	at org.jboss.resteasy.core.MessageBodyParameterInjector.inject(MessageBodyParameterInjector.java:213)
+	at org.jboss.resteasy.core.MethodInjectorImpl.injectArguments(MethodInjectorImpl.java:95)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:128)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:660)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:524)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:474)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:476)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:408)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:69)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:492)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:261)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:161)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:164)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:247)
+	at io.quarkus.resteasy.runtime.standalone.RequestDispatcher.service(RequestDispatcher.java:73)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.dispatch(VertxRequestHandler.java:135)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler$1.run(VertxRequestHandler.java:90)
+	at io.quarkus.vertx.core.runtime.VertxCoreRecorder$13.runWith(VertxCoreRecorder.java:543)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2449)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1478)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2021-12-11 15:44:34,100 desktop-b5306v4 getting-started-dev.jar[57268] SEVERE [org.ecl.yas.int.Unmarshaller] (executor-thread-0) Cannot create instance of a class: class tech.donau.course.data.Book, No default constructor found.
+2021-12-11 15:45:19,452 desktop-b5306v4 getting-started-dev.jar[57268] WARN  [io.qua.dep.dev.JavaCompilationProvider] (vert.x-worker-thread-0) system modules path not set in conjunction with -source 11, line -1 in [unknown source]
+2021-12-11 15:45:19,464 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-0) Restarting quarkus due to changes in Book.class.
+2021-12-11 15:45:19,466 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [LifeCycle] (Quarkus Main Thread) Onstop Executed
+2021-12-11 15:45:19,513 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [io.quarkus] (Quarkus Main Thread) getting-started stopped in 0.047s
+2021-12-11 15:45:20,819 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [LifeCycle] (Quarkus Main Thread) Onstart Executed
+2021-12-11 15:45:20,835 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [io.quarkus] (Quarkus Main Thread) getting-started 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.5.0.Final) started in 1.310s. Listening on: http://localhost:8080
+2021-12-11 15:45:20,837 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2021-12-11 15:45:20,840 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [cdi, hibernate-validator, resteasy, resteasy-jsonb, smallrye-context-propagation, vertx]
+2021-12-11 15:45:20,841 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-0) Live reload total time: 2.340s 
+2021-12-11 15:51:36,704 desktop-b5306v4 getting-started-dev.jar[57268] WARN  [io.qua.dep.dev.JavaCompilationProvider] (vert.x-worker-thread-0) system modules path not set in conjunction with -source 11, line -1 in [unknown source]
+2021-12-11 15:51:36,712 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-0) Restarting quarkus due to changes in BookResource.class.
+2021-12-11 15:51:36,714 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [LifeCycle] (Quarkus Main Thread) Onstop Executed
+2021-12-11 15:51:36,736 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [io.quarkus] (Quarkus Main Thread) getting-started stopped in 0.023s
+2021-12-11 15:51:37,952 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [LifeCycle] (Quarkus Main Thread) Onstart Executed
+2021-12-11 15:51:37,966 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [io.quarkus] (Quarkus Main Thread) getting-started 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.5.0.Final) started in 1.220s. Listening on: http://localhost:8080
+2021-12-11 15:51:37,968 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2021-12-11 15:51:37,969 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [cdi, hibernate-validator, resteasy, resteasy-jsonb, smallrye-context-propagation, vertx]
+2021-12-11 15:51:37,972 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-0) Live reload total time: 1.427s 
+2021-12-11 15:51:37,983 desktop-b5306v4 getting-started-dev.jar[57268] ERROR [io.qua.ver.htt.run.QuarkusErrorHandler] (executor-thread-0) HTTP Request to /books failed, error id: eff6c1b7-9224-4361-81fd-bc372ad67a6b-1: javax.validation.ValidationException: HV000045: A group has to be an interface. tech.donau.course.data.Book is not.
+	at org.hibernate.validator.internal.engine.groups.ValidationOrderGenerator.getValidationOrder(ValidationOrderGenerator.java:80)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.determineGroupValidationOrder(ValidatorImpl.java:370)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:164)
+	at tech.donau.course.BookResource.create(BookResource.java:32)
+	at tech.donau.course.BookResource_Subclass.create$$superforward1(BookResource_Subclass.zig:118)
+	at tech.donau.course.BookResource_Subclass$$function$$5.apply(BookResource_Subclass$$function$$5.zig:33)
+	at io.quarkus.arc.impl.AroundInvokeInvocationContext.proceed(AroundInvokeInvocationContext.java:54)
+	at io.quarkus.arc.runtime.devconsole.InvocationInterceptor.proceed(InvocationInterceptor.java:62)
+	at io.quarkus.arc.runtime.devconsole.InvocationInterceptor.monitor(InvocationInterceptor.java:49)
+	at io.quarkus.arc.runtime.devconsole.InvocationInterceptor_Bean.intercept(InvocationInterceptor_Bean.zig:516)
+	at io.quarkus.arc.impl.InterceptorInvocation.invoke(InterceptorInvocation.java:41)
+	at io.quarkus.arc.impl.AroundInvokeInvocationContext.perform(AroundInvokeInvocationContext.java:41)
+	at io.quarkus.arc.impl.InvocationContexts.performAroundInvoke(InvocationContexts.java:32)
+	at tech.donau.course.BookResource_Subclass.create(BookResource_Subclass.zig:196)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:170)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:660)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:524)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:474)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:476)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:408)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:69)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:492)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:261)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:161)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:164)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:247)
+	at io.quarkus.resteasy.runtime.standalone.RequestDispatcher.service(RequestDispatcher.java:73)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.dispatch(VertxRequestHandler.java:135)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler$1.run(VertxRequestHandler.java:90)
+	at io.quarkus.vertx.core.runtime.VertxCoreRecorder$13.runWith(VertxCoreRecorder.java:543)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2449)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1478)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2021-12-11 16:00:02,787 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [LifeCycle] (Shutdown thread) Onstop Executed
+2021-12-11 16:00:02,813 desktop-b5306v4 getting-started-dev.jar[57268] WARNING [org.aes.rea.ter.imp.AbstractWindowsTerminal] (Shutdown thread) Failed to write out.
+2021-12-11 16:00:02,812 desktop-b5306v4 getting-started-dev.jar[57268] INFO  [io.quarkus] (Shutdown thread) getting-started stopped in 0.027s
+2021-12-26 21:37:18,003 desktop-b5306v4 getting-started-dev.jar[28444] INFO  [LifeCycle] (Quarkus Main Thread) Onstart Executed
+2021-12-26 21:37:18,096 desktop-b5306v4 getting-started-dev.jar[28444] INFO  [io.quarkus] (Quarkus Main Thread) getting-started 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.5.0.Final) started in 3.685s. Listening on: http://localhost:8080
+2021-12-26 21:37:18,098 desktop-b5306v4 getting-started-dev.jar[28444] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2021-12-26 21:37:18,099 desktop-b5306v4 getting-started-dev.jar[28444] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [cdi, hibernate-validator, resteasy, resteasy-jsonb, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2021-12-27 23:55:23,427 desktop-b5306v4 getting-started-dev.jar[24604] INFO  [LifeCycle] (Quarkus Main Thread) Onstart Executed
+2021-12-27 23:55:23,539 desktop-b5306v4 getting-started-dev.jar[24604] INFO  [io.quarkus] (Quarkus Main Thread) getting-started 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.5.0.Final) started in 5.224s. Listening on: http://localhost:8080
+2021-12-27 23:55:23,542 desktop-b5306v4 getting-started-dev.jar[24604] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2021-12-27 23:55:23,544 desktop-b5306v4 getting-started-dev.jar[24604] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [cdi, hibernate-validator, resteasy, resteasy-jsonb, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2021-12-28 00:04:50,984 desktop-b5306v4 getting-started-dev.jar[24604] WARN  [io.qua.dep.dev.JavaCompilationProvider] (vert.x-worker-thread-0) system modules path not set in conjunction with -source 11, line -1 in [unknown source]
+2021-12-28 00:04:51,003 desktop-b5306v4 getting-started-dev.jar[24604] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-0) Restarting quarkus due to changes in QuarkusApplication.class.
+2021-12-28 00:04:51,006 desktop-b5306v4 getting-started-dev.jar[24604] INFO  [LifeCycle] (Quarkus Main Thread) Onstop Executed
+2021-12-28 00:04:51,040 desktop-b5306v4 getting-started-dev.jar[24604] INFO  [io.quarkus] (Quarkus Main Thread) getting-started stopped in 0.035s
+2021-12-28 00:04:52,315 desktop-b5306v4 getting-started-dev.jar[24604] INFO  [LifeCycle] (Quarkus Main Thread) Onstart Executed
+2021-12-28 00:04:52,334 desktop-b5306v4 getting-started-dev.jar[24604] INFO  [io.quarkus] (Quarkus Main Thread) getting-started 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.5.0.Final) started in 1.284s. Listening on: http://localhost:8080
+2021-12-28 00:04:52,336 desktop-b5306v4 getting-started-dev.jar[24604] INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2021-12-28 00:04:52,338 desktop-b5306v4 getting-started-dev.jar[24604] INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [cdi, hibernate-validator, resteasy, resteasy-jsonb, smallrye-context-propagation, smallrye-openapi, swagger-ui, vertx]
+2021-12-28 00:04:52,340 desktop-b5306v4 getting-started-dev.jar[24604] INFO  [io.qua.dep.dev.RuntimeUpdatesProcessor] (vert.x-worker-thread-0) Live reload total time: 2.964s 

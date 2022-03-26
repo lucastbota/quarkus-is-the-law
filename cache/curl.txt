@@ -1,0 +1,7 @@
+curl -H "application/json" --request GET  http://localhost:8080/weather?city=NY
+
+//por cache
+curl -H "application/json" --request DELETE  http://localhost:8080/weather?city=NY
+
+//tdo o cache
+curl -H "application/json" --request DELETE  http://localhost:8080/weather

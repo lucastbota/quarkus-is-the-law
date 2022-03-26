@@ -1,0 +1,163 @@
+mvn io.quarkus.platform:quarkus-maven-plugin:2.5.0.Final:create \
+    -DprojectGroupId=my-groupId \
+    -DprojectArtifactId=my-artifactId \
+    -DprojectVersion=my-version \
+    -DclassName="org.my.group.MyResource"
+
+
+>>> Greetings
+
+mvn io.quarkus.platform:quarkus-maven-plugin:2.5.0.Final:create \
+-DprojectGroupId=tech.donau.course \
+-DprojectArtifactId=getting-started \
+-DclassName="tech.donau.course.GreetingResource" \
+-Dpath="/hello"
+
+mvnw quarkus:dev
+
+>>> Crypto
+mvn io.quarkus.platform:quarkus-maven-plugin:2.5.0.Final:create \
+-DprojectGroupId=tech.donau.course \
+-DprojectArtifactId=crypto \
+-DclassName="tech.donau.course.CryptoCurrencyResource" \
+-Dextensions="rest-client, resteasy-jsonb"
+-Dpath="/crypto"
+
+
+>>> Websocket
+mvn io.quarkus.platform:quarkus-maven-plugin:2.5.0.Final:create \
+-DprojectGroupId=tech.donau.course \
+-DprojectArtifactId=wsocket \
+-Dextensions="websockets" \
+-DnoExamples
+
+>>>> Fault tolerance
+
+mvn io.quarkus.platform:quarkus-maven-plugin:2.6.0.Final:create \
+    -DprojectGroupId=tech.donau.course \
+    -DprojectArtifactId=fault-tolerance \
+    -DclassName="tech.donau.course.BookResource" \
+    -Dpath="/book" \
+    -Dextensions="resteasy,smallrye-fault-tolerance,resteasy-jackson"
+
+
+mvn io.quarkus.platform:quarkus-maven-plugin:2.6.0.Final:create \
+    -DprojectGroupId=tech.donau.course \
+    -DprojectArtifactId=nativeimage \
+    -DclassName="tech.donau.course.BookResource" \
+    -Dpath="/book" \
+    -Dextensions="resteasy,smallrye-fault-tolerance,resteasy-jackson"
+
+mvn io.quarkus.platform:quarkus-maven-plugin:2.6.0.Final:create \
+    -DprojectGroupId=tech.donau.course \
+    -DprojectArtifactId=ds_example \
+    -DclassName="tech.donau.course.BookResource" \
+    -Dpath="/book" \
+    -Dextensions="rest-client, resteasy-jsonb"
+
+mvn quarkus:add-extension -Dextension="agroal"
+
+mvn io.quarkus.platform:quarkus-maven-plugin:2.6.0.Final:create \
+    -DprojectGroupId=tech.donau.course \
+    -DprojectArtifactId=hs_example \
+    -DclassName="tech.donau.course.BookResource" \
+    -Dpath="/book" 
+ mvn quarkus:add-extension -Dextensions="resteasy-jsonb, hibernate-orm, jdbc-mysql"
+
+
+mvn io.quarkus.platform:quarkus-maven-plugin:2.6.0.Final:create \
+    -DprojectGroupId=tech.donau.course \
+    -DprojectArtifactId=message-kafka \
+    -Dextensions="kafka"
+
+mvn io.quarkus.platform:quarkus-maven-plugin:2.6.0.Final:create \
+    -DprojectGroupId=tech.donau.course \
+    -DprojectArtifactId=amqp \
+    -Dextensions="amqp"
+
+mvn io.quarkus:quarkus-maven-plugin:2.6.0.Final:create \
+    -DprojectGroupId=tech.donau \
+    -DprojectArtifactId=async-messaging \
+    -DclassName="tech.donau.greeting.GreetingResource" \
+    -Dpath="/greeting" \
+    -Dextensions="vertx"
+
+
+mvn io.quarkus:quarkus-maven-plugin:2.6.0.Final:create \
+    -DprojectGroupId=tech.donau \
+    -DprojectArtifactId=qpid-jms-messaging \
+    -Dextensions="qpid-jms"
+
+mvn io.quarkus:quarkus-maven-plugin:2.6.0.Final:create \
+    -DprojectGroupId=tech.donau \
+    -DprojectArtifactId=cache \
+    -DclassName="tech.donau.WeatherResource" \
+    -Dpath="weather" \
+    -Dextensions="cache, resteasy-jsonb"
+
+mvn io.quarkus.platform:quarkus-maven-plugin:2.6.3.Final:create \
+    -DprojectGroupId=tech.donau \
+    -DprojectArtifactId=mongolou \
+    -DclassName="tech.donau.BookResource" \
+    -Dpath="books" \
+    -Dextensions="resteasy-reactive-jackson,mongodb-client"
+
+mvn io.quarkus.platform:quarkus-maven-plugin:2.6.3.Final:create \
+    -DprojectGroupId=tech.donau \
+    -DprojectArtifactId=mongoloupanache \
+    -DclassName="tech.donau.BookResource" \
+    -Dpath="books" \
+    -Dextensions="resteasy-reactive-jackson,mongodb-panache"
+
+
+
+mvn io.quarkus.platform:quarkus-maven-plugin:2.6.3.Final:create \
+    -DprojectGroupId=tech.donau \
+    -DprojectArtifactId=dynamo-api \
+    -DclassName="tech.donau.BookResource" \
+    -Dpath="books" \
+    -Dextensions="resteasy,resteasy-jackson,amazon-dynamodb,resteasy-mutiny"
+
+
+mvn io.quarkus.platform:quarkus-maven-plugin:2.6.3.Final:create \
+    -DprojectGroupId=tech.donau \
+    -DprojectArtifactId=security-openid-connect-quickstart \
+    -Dextensions="resteasy,oidc,resteasy-jackson" \
+    -DnoExamples
+
+
+mvn io.quarkus.platform:quarkus-maven-plugin:2.6.3.Final:create \
+    -DprojectGroupId=tech.donau \
+    -DprojectArtifactId=security-jwt-quickstart \
+    -DclassName="tech.donau.resource.ProfileResource" \
+    -Dpath="profile" \
+    -Dextensions="resteasy,resteasy-jackson,smallrye-jwt,smallrye-jwt-build"
+
+
+mvn io.quarkus.platform:quarkus-maven-plugin:2.6.3.Final:create \
+    -DprojectGroupId=tech.donau \
+    -DprojectArtifactId=security-jpa-quickstart \
+    -Dextensions="security-jpa,jdbc-postgresql,resteasy,hibernate-orm-panache" \
+    -DnoExamples
+
+mvn io.quarkus.platform:quarkus-maven-plugin:2.6.3.Final:create \
+    -DprojectGroupId=tech.donau \
+    -DprojectArtifactId=jib \
+    -DclassName="tech.donau.resource.ProfileResource" \
+    -Dpath="profile" \
+    -Dextensions="container-image-jib"
+
+mvn io.quarkus.platform:quarkus-maven-plugin:2.7.0.Final:create \
+    -DprojectGroupId=tech.donau \
+    -DprojectArtifactId=gelf-logging \
+    -Dextensions="resteasy,logging-gelf" \
+    -DnoCode
+----------
+
+Kotlin
+mvn io.quarkus.platform:quarkus-maven-plugin:2.5.0.Final:create \
+    -DprojectGroupId=tech.donau.course \
+    -DprojectArtifactId=getting-startedk \
+    -DclassName="tech.donau.course.GreetingResource" \
+    -Dpath="/greeting" \
+    -Dextensions="resteasy,kotlin,resteasy-jackson"

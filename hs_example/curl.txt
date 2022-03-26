@@ -1,0 +1,2 @@
+curl --header "Content-Type: application/json" --request POST  --data "{\"name\":\"Hobgoblin\"}" http://localhost:8081/author
+curl --header "Content-Type: application/json" --request POST  --data "{\"id\":11,\"name\":\"Mediúnico\", \"description\":\"Categoria destinada a livros espíritas\"}" http://localhost:8081/category

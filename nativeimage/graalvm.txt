@@ -1,0 +1,2 @@
+export JAVA_HOME=C:/devtools/binarios/graalvm-ce-java
+export PATH=C:/devtools/binarios/graalvm-ce-java/bin:$PATH
